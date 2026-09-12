@@ -34,7 +34,7 @@ export const AddUnitModal: React.FC<AddUnitModalProps> = ({ isOpen, onClose }) =
       block,
       ownerName,
       ownerPhone: ownerPhone || '+254 700 000 000',
-      ownerEmail: ownerEmail || 'owner@estate.com',
+      ownerEmail: ownerEmail || 'resident@estate-demo.invalid',
       propertyType,
       sizeSqFt,
       monthlyServiceCharge: monthlyCharge,
@@ -51,26 +51,31 @@ export const AddUnitModal: React.FC<AddUnitModalProps> = ({ isOpen, onClose }) =
   };
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '520px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid var(--border-color)', paddingBottom: '14px', marginBottom: '18px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Building size={20} color="var(--accent-primary)" />
-            <h2 style={{ fontSize: '1.25rem', fontWeight: 800, margin: 0 }}>Add New Estate Unit</h2>
+    <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(4px)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000, padding: '20px' }}>
+      <div className="glass-card animate-fade-in" style={{ maxWidth: '540px', width: '100%', padding: '28px', maxHeight: '90vh', overflowY: 'auto' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <div style={{ width: '36px', height: '36px', borderRadius: 'var(--radius-sm)', background: 'var(--accent-gradient)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Building size={20} color="#ffffff" />
+            </div>
+            <div>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, margin: 0 }}>Register New Unit</h3>
+              <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', margin: 0 }}>Add property details to service charge billing</p>
+            </div>
           </div>
-          <button onClick={onClose} style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer' }}>
+          <button onClick={onClose} style={{ background: 'none', border: 'none', color: 'var(--text-dim)', cursor: 'pointer' }}>
             <X size={20} />
           </button>
         </div>
 
-        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
             <div>
-              <label className="input-label">Unit Number (e.g. A-305)</label>
+              <label className="input-label">Unit Number</label>
               <input
                 type="text"
                 className="input-field"
-                placeholder="A-305"
+                placeholder="e.g. B-402"
                 value={unitNumber}
                 onChange={(e) => setUnitNumber(e.target.value)}
                 required
@@ -78,13 +83,15 @@ export const AddUnitModal: React.FC<AddUnitModalProps> = ({ isOpen, onClose }) =
             </div>
 
             <div>
-              <label className="input-label">Block / Phase</label>
-              <select className="input-field" value={block} onChange={(e) => setBlock(e.target.value)}>
-                <option value="Block A (Azure)">Block A (Azure)</option>
-                <option value="Block B (Crestview)">Block B (Crestview)</option>
-                <option value="Block C (Horizon)">Block C (Horizon)</option>
-                <option value="Villa Zone (Royal Oaks)">Villa Zone (Royal Oaks)</option>
-              </select>
+              <label className="input-label">Block / Wing</label>
+              <input
+                type="text"
+                className="input-field"
+                placeholder="e.g. Block B"
+                value={block}
+                onChange={(e) => setBlock(e.target.value)}
+                required
+              />
             </div>
           </div>
 
@@ -93,7 +100,7 @@ export const AddUnitModal: React.FC<AddUnitModalProps> = ({ isOpen, onClose }) =
             <input
               type="text"
               className="input-field"
-              placeholder="e.g. Jane Doe"
+              placeholder="e.g. Ching Chang Wambui"
               value={ownerName}
               onChange={(e) => setOwnerName(e.target.value)}
               required
@@ -106,7 +113,7 @@ export const AddUnitModal: React.FC<AddUnitModalProps> = ({ isOpen, onClose }) =
               <input
                 type="text"
                 className="input-field"
-                placeholder="+254 712 345 678"
+                placeholder="+254 700 000 000"
                 value={ownerPhone}
                 onChange={(e) => setOwnerPhone(e.target.value)}
               />
@@ -117,7 +124,7 @@ export const AddUnitModal: React.FC<AddUnitModalProps> = ({ isOpen, onClose }) =
               <input
                 type="email"
                 className="input-field"
-                placeholder="resident@gmail.com"
+                placeholder="resident@estate-demo.invalid"
                 value={ownerEmail}
                 onChange={(e) => setOwnerEmail(e.target.value)}
               />

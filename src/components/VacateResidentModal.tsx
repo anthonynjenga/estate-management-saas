@@ -39,7 +39,7 @@ export const VacateResidentModal: React.FC<VacateResidentModalProps> = ({ unit, 
       updateUnit(unit.id, {
         ownerName: newOwnerName.trim(),
         ownerPhone: newOwnerPhone.trim() || '+254 700 000 000',
-        ownerEmail: newOwnerEmail.trim() || 'resident@estate.com',
+        ownerEmail: newOwnerEmail.trim() || 'resident@estate-demo.invalid',
         currentBalance: clearOutstandingBalance ? 0 : unit.currentBalance,
         daysOverdue: clearOutstandingBalance ? 0 : unit.daysOverdue,
         paymentStatus: clearOutstandingBalance ? 'Paid' : unit.paymentStatus,
@@ -54,7 +54,7 @@ export const VacateResidentModal: React.FC<VacateResidentModalProps> = ({ unit, 
       updateUnit(unit.id, {
         ownerName: '[Vacant Unit - Resident Departed]',
         ownerPhone: 'N/A',
-        ownerEmail: 'vacant@estate.com',
+        ownerEmail: 'vacant@estate-demo.invalid',
         currentBalance: clearOutstandingBalance ? 0 : unit.currentBalance,
         daysOverdue: clearOutstandingBalance ? 0 : unit.daysOverdue,
         paymentStatus: clearOutstandingBalance ? 'Paid' : unit.paymentStatus,
@@ -184,14 +184,13 @@ export const VacateResidentModal: React.FC<VacateResidentModalProps> = ({ unit, 
             <div style={{ padding: '14px', borderRadius: 'var(--radius-md)', background: 'var(--bg-secondary)', border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
               <div style={{ fontWeight: 800, fontSize: '0.85rem', color: '#10b981' }}>New Resident Credentials:</div>
               <div>
-                <label className="input-label">New Owner / Resident Full Name</label>
+                <label className="input-label">New Resident Full Name *</label>
                 <input
                   type="text"
                   className="input-field"
-                  placeholder="e.g. Michael Thorne"
+                  placeholder="e.g. Ching Chang Wambui"
                   value={newOwnerName}
                   onChange={(e) => setNewOwnerName(e.target.value)}
-                  required
                 />
               </div>
 
@@ -201,7 +200,7 @@ export const VacateResidentModal: React.FC<VacateResidentModalProps> = ({ unit, 
                   <input
                     type="text"
                     className="input-field"
-                    placeholder="+254 712 999 888"
+                    placeholder="+254 700 000 000"
                     value={newOwnerPhone}
                     onChange={(e) => setNewOwnerPhone(e.target.value)}
                   />
@@ -211,7 +210,7 @@ export const VacateResidentModal: React.FC<VacateResidentModalProps> = ({ unit, 
                   <input
                     type="email"
                     className="input-field"
-                    placeholder="m.thorne@gmail.com"
+                    placeholder="new.resident@estate-demo.invalid"
                     value={newOwnerEmail}
                     onChange={(e) => setNewOwnerEmail(e.target.value)}
                   />
