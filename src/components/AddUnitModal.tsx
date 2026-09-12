@@ -33,7 +33,7 @@ export const AddUnitModal: React.FC<AddUnitModalProps> = ({ isOpen, onClose }) =
       unitNumber,
       block,
       ownerName,
-      ownerPhone: ownerPhone || '+254 700 000 000',
+      ownerPhone: ownerPhone || '+254 7XX XXX XXX',
       ownerEmail: ownerEmail || 'resident@estate-demo.invalid',
       propertyType,
       sizeSqFt,
@@ -113,7 +113,7 @@ export const AddUnitModal: React.FC<AddUnitModalProps> = ({ isOpen, onClose }) =
               <input
                 type="text"
                 className="input-field"
-                placeholder="+254 700 000 000"
+                placeholder="+254 7XX XXX XXX"
                 value={ownerPhone}
                 onChange={(e) => setOwnerPhone(e.target.value)}
               />

@@ -38,7 +38,7 @@ export const VacateResidentModal: React.FC<VacateResidentModalProps> = ({ unit, 
       if (!newOwnerName.trim()) return;
       updateUnit(unit.id, {
         ownerName: newOwnerName.trim(),
-        ownerPhone: newOwnerPhone.trim() || '+254 700 000 000',
+        ownerPhone: newOwnerPhone.trim() || '+254 7XX XXX XXX',
         ownerEmail: newOwnerEmail.trim() || 'resident@estate-demo.invalid',
         currentBalance: clearOutstandingBalance ? 0 : unit.currentBalance,
         daysOverdue: clearOutstandingBalance ? 0 : unit.daysOverdue,
@@ -200,7 +200,7 @@ export const VacateResidentModal: React.FC<VacateResidentModalProps> = ({ unit, 
                   <input
                     type="text"
                     className="input-field"
-                    placeholder="+254 700 000 000"
+                    placeholder="+254 7XX XXX XXX"
                     value={newOwnerPhone}
                     onChange={(e) => setNewOwnerPhone(e.target.value)}
                   />

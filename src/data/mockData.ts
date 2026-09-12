@@ -8,12 +8,12 @@ export const initialEstate: Estate = {
   totalUnits: 48,
   managerName: 'Zuberi Quaye (Lead Property Mgr)',
   managerEmail: 'management@estate-demo.invalid',
-  managerPhone: '+254 700 000 000',
+  managerPhone: '+254 7XX XXX XX0',
   bankDetails: {
     bankName: 'Demo National Bank',
     accountName: 'Estate General HOA Account',
-    accountNumber: '0000-1111-2222',
-    paybillNo: '000000 (Account: UnitNo)'
+    accountNumber: '0000-XXXX-XXXX',
+    paybillNo: '522XXX (Account: UnitNo)'
   }
 };
 
@@ -32,7 +32,7 @@ export const initialUnits: Unit[] = [
     unitNumber: 'A-101',
     block: 'Block A (Azure)',
     ownerName: 'Ching Chang Wambui',
-    ownerPhone: '+254 700 000 101',
+    ownerPhone: '+254 7XX XXX XX1',
     ownerEmail: 'ching.chang.wambui@estate-demo.invalid',
     propertyType: 'Apartment',
     sizeSqFt: 1200,
@@ -52,7 +52,7 @@ export const initialUnits: Unit[] = [
     unitNumber: 'A-102',
     block: 'Block A (Azure)',
     ownerName: 'Ythza Oti',
-    ownerPhone: '+254 700 000 102',
+    ownerPhone: '+254 7XX XXX XX2',
     ownerEmail: 'ythza.oti@estate-demo.invalid',
     propertyType: 'Apartment',
     sizeSqFt: 1450,
@@ -72,7 +72,7 @@ export const initialUnits: Unit[] = [
     unitNumber: 'A-103',
     block: 'Block A (Azure)',
     ownerName: 'Zuberi Quaye',
-    ownerPhone: '+254 700 000 103',
+    ownerPhone: '+254 7XX XXX XX3',
     ownerEmail: 'zuberi.quaye@estate-demo.invalid',
     propertyType: 'Penthouse',
     sizeSqFt: 2400,
@@ -92,7 +92,7 @@ export const initialUnits: Unit[] = [
     unitNumber: 'A-104',
     block: 'Block A (Azure)',
     ownerName: 'Kaelen Vance',
-    ownerPhone: '+254 700 000 104',
+    ownerPhone: '+254 7XX XXX XX4',
     ownerEmail: 'kaelen.vance@estate-demo.invalid',
     propertyType: 'Apartment',
     sizeSqFt: 1200,
@@ -111,7 +111,7 @@ export const initialUnits: Unit[] = [
     unitNumber: 'B-201',
     block: 'Block B (Crestview)',
     ownerName: 'Vesper Nyambura',
-    ownerPhone: '+254 700 000 201',
+    ownerPhone: '+254 7XX XXX X11',
     ownerEmail: 'vesper.nyambura@estate-demo.invalid',
     propertyType: 'Duplex',
     sizeSqFt: 1800,
@@ -130,7 +130,7 @@ export const initialUnits: Unit[] = [
     unitNumber: 'B-202',
     block: 'Block B (Crestview)',
     ownerName: 'Zephyrine Kiptoo',
-    ownerPhone: '+254 700 000 202',
+    ownerPhone: '+254 7XX XXX X12',
     ownerEmail: 'zephyrine.k@estate-demo.invalid',
     propertyType: 'Apartment',
     sizeSqFt: 1200,
@@ -149,7 +149,7 @@ export const initialUnits: Unit[] = [
     unitNumber: 'B-203',
     block: 'Block B (Crestview)',
     ownerName: 'Balthazar Njeri-Chai',
-    ownerPhone: '+254 700 000 203',
+    ownerPhone: '+254 7XX XXX X13',
     ownerEmail: 'balthazar.chai@estate-demo.invalid',
     propertyType: 'Apartment',
     sizeSqFt: 1350,
@@ -169,7 +169,7 @@ export const initialUnits: Unit[] = [
     unitNumber: 'B-204',
     block: 'Block B (Crestview)',
     ownerName: 'Tariq Hassan-Amani',
-    ownerPhone: '+254 700 000 204',
+    ownerPhone: '+254 7XX XXX X14',
     ownerEmail: 'tariq.h@estate-demo.invalid',
     propertyType: 'Duplex',
     sizeSqFt: 1850,
@@ -188,7 +188,7 @@ export const initialUnits: Unit[] = [
     unitNumber: 'C-301',
     block: 'Block C (Horizon)',
     ownerName: 'Wanjiru & Ching Ltd',
-    ownerPhone: '+254 700 000 301',
+    ownerPhone: '+254 7XX XXX X21',
     ownerEmail: 'info@wanjiruching-demo.invalid',
     propertyType: 'Commercial',
     sizeSqFt: 2100,
@@ -208,7 +208,7 @@ export const initialUnits: Unit[] = [
     unitNumber: 'C-302',
     block: 'Block C (Horizon)',
     ownerName: 'Prof. Ythza Kamau',
-    ownerPhone: '+254 700 000 302',
+    ownerPhone: '+254 7XX XXX X22',
     ownerEmail: 'prof.ythza@estate-demo.invalid',
     propertyType: 'Apartment',
     sizeSqFt: 1200,
@@ -227,7 +227,7 @@ export const initialUnits: Unit[] = [
     unitNumber: 'C-303',
     block: 'Block C (Horizon)',
     ownerName: 'Chloe Dupont-Wambui',
-    ownerPhone: '+254 700 000 303',
+    ownerPhone: '+254 7XX XXX X23',
     ownerEmail: 'chloe.wambui@estate-demo.invalid',
     propertyType: 'Apartment',
     sizeSqFt: 1250,
@@ -246,7 +246,7 @@ export const initialUnits: Unit[] = [
     unitNumber: 'V-01',
     block: 'Villa Zone (Royal Oaks)',
     ownerName: 'Ambassador Sterling Oti',
-    ownerPhone: '+254 700 000 401',
+    ownerPhone: '+254 7XX XXX X31',
     ownerEmail: 'sterling.oti@estate-demo.invalid',
     propertyType: 'Villa',
     sizeSqFt: 3500,
@@ -265,7 +265,7 @@ export const initialUnits: Unit[] = [
     unitNumber: 'V-02',
     block: 'Villa Zone (Royal Oaks)',
     ownerName: "Chief Executive Ndung'u-Zheng",
-    ownerPhone: '+254 700 000 402',
+    ownerPhone: '+254 7XX XXX X32',
     ownerEmail: 'ndungu.zheng@estate-demo.invalid',
     propertyType: 'Villa',
     sizeSqFt: 3800,
@@ -291,7 +291,7 @@ export const initialPayments: PaymentRecord[] = [
     amountPaid: 19000,
     paymentDate: '2026-09-02',
     method: 'Direct Debit',
-    referenceNo: 'DD-992019',
+    referenceNo: 'DD-XXXXXX',
     invoiceMonth: '2026-09',
     status: 'Completed'
   },
@@ -303,7 +303,7 @@ export const initialPayments: PaymentRecord[] = [
     amountPaid: 19000,
     paymentDate: '2026-09-01',
     method: 'M-Pesa',
-    referenceNo: 'RHS89201KS',
+    referenceNo: 'RHSXXXXXKS',
     invoiceMonth: '2026-09',
     status: 'Completed'
   },
@@ -315,7 +315,7 @@ export const initialPayments: PaymentRecord[] = [
     amountPaid: 19000,
     paymentDate: '2026-09-04',
     method: 'M-Pesa',
-    referenceNo: 'RHT10294LL',
+    referenceNo: 'RHTXXXXXLL',
     invoiceMonth: '2026-09',
     status: 'Completed'
   },
@@ -327,7 +327,7 @@ export const initialPayments: PaymentRecord[] = [
     amountPaid: 81375, // 3 months prepaid
     paymentDate: '2026-07-01',
     method: 'Bank Transfer',
-    referenceNo: 'FT2618293019',
+    referenceNo: 'FTXXXXXX19',
     invoiceMonth: '2026-09',
     status: 'Completed'
   },
@@ -339,7 +339,7 @@ export const initialPayments: PaymentRecord[] = [
     amountPaid: 19000,
     paymentDate: '2026-09-03',
     method: 'M-Pesa',
-    referenceNo: 'RHU49201MM',
+    referenceNo: 'RHUXXXXXMM',
     invoiceMonth: '2026-09',
     status: 'Completed'
   },
@@ -351,7 +351,7 @@ export const initialPayments: PaymentRecord[] = [
     amountPaid: 47750,
     paymentDate: '2026-09-01',
     method: 'Bank Transfer',
-    referenceNo: 'EFT-EMB-9021',
+    referenceNo: 'EFT-EMB-XXXX',
     invoiceMonth: '2026-09',
     status: 'Completed'
   }
@@ -379,7 +379,7 @@ export const initialExpenses: Expense[] = [
     date: '2026-09-03',
     paymentMethod: 'M-Pesa Paybill',
     status: 'Paid',
-    receiptFileName: 'MetroPower_Receipt_881920.pdf'
+    receiptFileName: 'MetroPower_Receipt_XXXXXX.pdf'
   },
   {
     id: 'exp-003',
@@ -390,7 +390,7 @@ export const initialExpenses: Expense[] = [
     date: '2026-08-28',
     paymentMethod: 'Bank Transfer',
     status: 'Paid',
-    receiptFileName: 'Total_Diesel_Inv_441.pdf'
+    receiptFileName: 'Total_Diesel_Inv_XXXX.pdf'
   },
   {
     id: 'exp-004',
